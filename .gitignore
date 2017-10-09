@@ -1,0 +1,11 @@
+# Executables
+*.elf
+*.exe
+*.out
+
+# Object files
+*.o
+*.obj
+
+# Folders
+bin
