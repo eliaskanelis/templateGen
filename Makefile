@@ -50,3 +50,6 @@ run: all
 
 clean:
 	rm -rf $(BUILD_DIR)
+
+install: all
+	cp -avr bin/* ~/bin
