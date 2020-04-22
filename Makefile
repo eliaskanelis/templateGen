@@ -7,7 +7,7 @@ TARGET = templateGen
 # Build path
 BUILD_DIR = bin
 
-TEMPLATE_INSTALL_HOME_DIR =	"$(HOME)/.templateGen/"
+TEMPLATE_INSTALL_HOME_DIR =	"$(HOME)/.config/templateGen/"
 
 
 TEMPLATE_INSTALL_DIR =	"$(TEMPLATE_INSTALL_HOME_DIR)templates/"
