@@ -9,7 +9,7 @@
 
 #include "file_io.h"
 
-#define TEMPLATE_INSTALL_PATH			"${HOME}/.config/templateGen/templates/template"
+#define TEMPLATE_INSTALL_PATH "/home/tedi/.config/templateGen/templates/template"
 static const char *g_filepath = TEMPLATE_INSTALL_PATH;
 
 static const char *g_module_filepath = "";
