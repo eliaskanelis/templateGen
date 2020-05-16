@@ -1,20 +1,24 @@
-# C Module generator for both header and source files
+# Souce code generator based on a given template
 
-------
+## Description:
 
-# Instructions:
+All it does is copy template file[s], replace predefined substrings and write
+the output as a new generated file.
 
-1. Run **make**
+A simple program just for my own use.
 
-------
-# Info:
+## Installation:
+- Application is installed locally on ~/.local.bin
 
-## Tools:
+- Templates are located at ~/.config/templateGen
 
-- **Build tools:**      gcc, make
+No need to use sudo!
 
-------
+``` sh
+make install
+```
+## Uninstall:
 
-# TODO:
-
-- Needs documentation...
+``` sh
+make uninstall
+```
