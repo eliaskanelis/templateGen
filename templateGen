@@ -20,7 +20,7 @@ def generate_c(name, source_filepath, target_filepath):
 		sys.exit(1)
 
 	# Generate header
-	header_source_filepath = os.path.join(source_filepath, "templates", "template.h")
+	header_source_filepath = os.path.join(source_filepath, "templates/c_module", "template.h")
 	header=""
 	try:
 		with open(header_source_filepath, 'r') as f:
@@ -41,7 +41,7 @@ def generate_c(name, source_filepath, target_filepath):
 		sys.exit(1)
 
 	# Generate source
-	source_source_filepath = os.path.join(source_filepath, "templates", "template.c")
+	source_source_filepath = os.path.join(source_filepath, "templates/c_module", "template.c")
 	source=""
 	try:
 		with open(source_source_filepath, 'r') as f:
