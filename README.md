@@ -31,6 +31,14 @@ Run the following command:
 pip install templategen
 ```
 
+### Usage
+
+Run the following command:
+
+```sh
+templategen --name=myName --template=c
+```
+
 <!-- LICENSE -->
 ## License
 
@@ -40,7 +48,7 @@ Distributed under the GNU3 License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Kanelis Ilias - [@email](mailto:hkanelhs@yahoo.gr)
+Kanelis Ilias - [email me](mailto:hkanelhs@yahoo.gr)
 
 GitHub Link: [https://github.com/TediCreations/templategen](https://github.com/TediCreations/templategen)
 
