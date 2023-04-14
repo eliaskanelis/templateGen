@@ -92,6 +92,10 @@ def generate(name, template_name, target_dirpath):
 def app_run():
     """Entry point for the app."""
     # -------------------------------------------------------------------------
+    # Prepare
+    create_config_if_missing()
+
+    # -------------------------------------------------------------------------
     # Arguments
     templates = list_templates()
 
@@ -119,7 +123,6 @@ def app_run():
     # -------------------------------------------------------------------------
     # Generate
 
-    create_config_if_missing()
     generate(name, template_name, target_dirpath)
 
 
