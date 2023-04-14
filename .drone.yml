@@ -10,7 +10,7 @@ steps:
 - name: Lint
   image: python:3.6-alpine
   commands:
-  - apk update && apk add gcc
+  - apk update && apk add gcc libc-dev
   - pip install --upgrade pip pylint
   - pylint templategen
 #- name: Test
