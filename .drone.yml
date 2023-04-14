@@ -8,7 +8,7 @@ platform:
 
 steps:
 - name: Test
-  image: python:alpine
+  image: python:3.6-alpine
   commands:
   - pip install --upgrade pip setuptools wheel
   - pip install .
