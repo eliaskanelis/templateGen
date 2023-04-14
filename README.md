@@ -1,24 +1,47 @@
-# Souce code generator based on a given template
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/tedicreations/templategen">
+    <img src="https://raw.githubusercontent.com/templategen/templategen/master/images/logo.jpeg" alt="Logo" width="80" height="80">
+  </a>
 
-## Description:
+  <h3 align="center">templategen</h3>
 
-All it does is copy template file[s], replace predefined substrings and write
-the output as a new generated file.
+  <p align="center">
+    Souce code generator from a given template
+  </p>
+</p>
 
-A simple program just for my own use.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Installation:
-- Application is installed locally on ~/.local.bin
+All it does is copy template file[s], replace predefined substrings and write the output as a new generated file.
 
-- Templates are located at ~/.config/templateGen
+<!-- GETTING STARTED -->
+## Getting Started
 
-No need to use sudo!
+To get a local copy up and running follow these simple steps.
 
-``` sh
-make install
+
+### Installation
+
+Run the following command:
+
+```sh
+pip install templategen
 ```
-## Uninstall:
 
-``` sh
-make uninstall
-```
+<!-- LICENSE -->
+## License
+
+Distributed under the GNU3 License. See `LICENSE` for more information.
+
+
+<!-- CONTACT -->
+## Contact
+
+Kanelis Ilias - [@email](mailto:hkanelhs@yahoo.gr)
+
+GitHub Link: [https://github.com/TediCreations/templategen](https://github.com/TediCreations/templategen)
+
+PyPi Link: [https://pypi.org/project/templategen/](https://pypi.org/project/templategen/)

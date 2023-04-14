@@ -1,21 +1,30 @@
-###############################################################################
-#	Configuration
-###############################################################################
-
-TEMPLATE_INSTALL_HOME_DIR = "$(HOME)/.config/templateGen/"
-TEMPLATE_INSTALL_DIR =      "$(TEMPLATE_INSTALL_HOME_DIR)templates/"
-
 .PHONY: all
-run: all
-	@echo "" > /dev/null
+all: checks package
+	:
 
-.PHONY: install
-install:
-	@mkdir -p ${TEMPLATE_INSTALL_HOME_DIR}
-	@cp -avr templateGen "$(HOME)/.local/bin/"
-	@cp -avr templates   ${TEMPLATE_INSTALL_DIR}
+.PHONY: checks
+checks: lint test docs
+	:
 
-.PHONY: uninstall
-uninstall:
-	rm -rf "$(HOME)/.local/bin/templateGen"
-	rm -rf ${TEMPLATE_INSTALL_HOME_DIR}
+.PHONY: package
+package:
+	@./setup.py sdist
+
+.PHONY: publish
+publish: clean package
+	@twine upload dist/*
+
+.PHONY: lint
+lint:
+	@pylint templategen
+
+.PHONY: clean
+clean:
+	@rm -rf MANIFEST
+	@rm -rf dist
+	@rm -rf *.egg-info
+	@rm -rf .eggs
+	@rm -rf .pytest_cache
+	@rm -rf build
+	@py3clean .
+	@echo "Done"

@@ -1,8 +1,5 @@
-# Executables
-*.elf
-*.exe
-*.out
-
-# Object files
-*.o
-*.obj
+# Python
+/dist
+/.eggs
+/build
+/*.egg-info/
