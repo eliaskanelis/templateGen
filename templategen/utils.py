@@ -91,5 +91,8 @@ def list_templates():
     config_dir = get_config_dir()
     template_dir = os.path.join(config_dir, "templates")
 
-    template_list = [name for name in os.listdir(template_dir) if os.path.isdir(os.path.join(template_dir, name))]
+    template_list = [
+        name for name in os.listdir(template_dir)
+        if os.path.isdir(os.path.join(template_dir, name))
+    ]
     return template_list

@@ -7,12 +7,27 @@ platform:
   arch: arm64
 
 steps:
-- name: Test
+- name: Lint
   image: python:3.6-alpine
   commands:
-  - apk update && apk add git
-  - pip install --upgrade pip setuptools wheel
-  - pip install .
+  - pip install --upgrade pip pylint
+  - pylint templategen
+#- name: Test
+#  image: python:3.6-alpine
+#  - apk update && apk add git
+#  - pip install --upgrade pip setuptools wheel
+#  - pip install .
+#- name: Publish PyPi
+#  image: python:3.6-alpine
+#  settings:
+#    username:
+#      from_secret: pypi_username
+#    password:
+#      from_secret: pypi_token  commands:
+#  commands:
+#  - pip install --upgrade pip setuptools wheel twine
+#  - python -m setup.py sdist
+#  - twine upload dist/* --username="${username}" --password="${password}"
 - name: Publish PyPi
   image: plugins/pypi
   settings:
