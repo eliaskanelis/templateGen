@@ -7,6 +7,10 @@ platform:
   arch: arm64
 
 steps:
+- name: Fetch tags
+  image: alpine/git
+  commands:
+  - git fetch --tags
 - name: Lint
   image: python:3.6-alpine
   commands:
@@ -30,6 +34,7 @@ steps:
   - apk update && apk add git gcc libc-dev libffi-dev
   - pip install --upgrade pip setuptools wheel twine
   - ./setup.py sdist
+  - git tags
   - twine upload dist/* --username="${username}" --password="${password}"
 #- name: Publish PyPi
 #  image: plugins/pypi
