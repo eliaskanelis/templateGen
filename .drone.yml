@@ -10,7 +10,7 @@ steps:
 - name: Test
   image: python:3.6-alpine
   commands:
-  - pip install --upgrade pip setuptools wheel
+  # - pip install --upgrade pip setuptools wheel
   - pip install .
 - name: Publish PyPi
   image: plugins/pypi
