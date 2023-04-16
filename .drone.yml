@@ -25,7 +25,7 @@ steps:
 #  - pip install .
 - name: Publish PyPi
   image: python:3.6-alpine
-  settings:
+  environment:
     username:
       from_secret: pypi_username
     password:
