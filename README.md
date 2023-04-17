@@ -39,6 +39,17 @@ Run the following command:
 templategen --name=myName --template=c
 ```
 
+### Development
+
+Dependencies:
+
+Python version: v3.6
+
+```sh
+pip install -r requirements-dev.txt
+pip install -r requirements.txt
+```
+
 <!-- LICENSE -->
 ## License
 

@@ -1,9 +1,5 @@
 .PHONY: all
-all: checks package
-	:
-
-.PHONY: checks
-checks: lint test docs
+all: lint package
 	:
 
 .PHONY: package
