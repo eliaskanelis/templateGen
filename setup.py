@@ -57,8 +57,8 @@ setup(
     long_description_content_type='text/markdown',
     author=about['__author__'],
     author_email=about['__email__'],
-    url=f"https://github.com/TediCreations/{packageName}",
-    download_url=f"https://github.com/TediCreations/{packageName}/archive/" +
+    url=f"https://github.com/eliaskanelis/{packageName}",
+    download_url=f"https://github.com/eliaskanelis/{packageName}/archive/" +
     about['__version__'] + '.tar.gz',
     keywords=['build', 'make', 'util'],
     install_requires=dependencies,

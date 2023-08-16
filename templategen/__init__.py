@@ -15,5 +15,5 @@ except DistributionNotFound:
     __version__ = "Unknown"
 
 __author__ = "Kanelis Elias"
-__email__ = "hkanelhs@yahoo.gr"
+__email__ = "e.kanelis@voidbuffer.com"
 __license__ = "MIT"

@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/tedicreations/templategen">
+  <a href="https://github.com/eliaskanelis/templategen">
     <img src="./images/logo.jpeg" alt="Logo" width="80" height="80">
   </a>
 
@@ -59,8 +59,8 @@ Distributed under the GNU3 License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Kanelis Ilias - [email me](mailto:hkanelhs@yahoo.gr)
+Kanelis Elias - [email me](mailto:e.kanelis@voidbuffer.com)
 
-GitHub Link: [https://github.com/TediCreations/templategen](https://github.com/TediCreations/templategen)
+GitHub Link: [https://github.com/eliaskanelis/templategen](https://github.com/eliaskanelis/templategen)
 
 PyPi Link: [https://pypi.org/project/templategen/](https://pypi.org/project/templategen/)
