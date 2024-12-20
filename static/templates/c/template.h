@@ -1,8 +1,8 @@
-﻿// ############################################################################
-// ############################################################################
-// About
+/* ######################################################################### */
+/* ######################################################################### */
+/* About */
 
-// TODO: Doxygen the about section in file ${name}.h
+/* TODO: Doxygen the about section in file ${name}.h */
 
 /**
  * \file     ${name}.h
@@ -22,9 +22,10 @@
  * \endcode
  */
 
-// ############################################################################
-// ############################################################################
-// Code
+/* ######################################################################### */
+/* ######################################################################### */
+/* Start of Include Guard and C++ Compatibility */
+
 
 #ifndef ${NAME}_H_ONLY_ONE_INCLUDE_SAFETY
 #define ${NAME}_H_ONLY_ONE_INCLUDE_SAFETY
@@ -34,86 +35,110 @@ extern "C"
 {
 #endif
 
-// ############################################################################
-// ############################################################################
-// Dependencies
 
-#include <stdint.h>
+/* ######################################################################### */
+/* ######################################################################### */
+/* Dependencies */
+
+
 #include <stdbool.h>
+#include <stdint.h>
 
-// ############################################################################
-// ############################################################################
-// Configs
+
+/* ######################################################################### */
+/* ######################################################################### */
+/* Configs */
 
 
 /*  ---   DO NOT TOUCH BELOW THIS LINE!   ---  */
 
-// ############################################################################
-// ############################################################################
-// Definitions
+/* ######################################################################### */
+/* ######################################################################### */
+/* Definitions */
 
 
-// ############################################################################
-// ############################################################################
-// Types
+/* ######################################################################### */
+/* ######################################################################### */
+/* Types */
+
+
+/**
+ * \brief Represents a device with an ID and initialization status.
+ */
+typedef struct
+{
+	/** Unique identifier for the device. */
+	uint32_t id;
+
+	/** Status of initialization (true if initialized, false otherwise) */
+	bool isInitialized;
+} ${name}_t;
+
 
 typedef struct
 {
 	uint32_t id;
-	bool isIinitialised;
+	bool     isIinitialised;
 } ${name}_t;
 
-// ############################################################################
-// ############################################################################
-// Function declarations
+
+/* ######################################################################### */
+/* ######################################################################### */
+/* Public API */
 
 
 /**
- * \brief    Open.
+ * \brief Open.
  *
- * \param[in,out] me    The handle.
+ * \param[in] pSelf The handle.
  *
- * \retval   0 on success.
- * \retval   1 on failure.
+ * \retval 0 On success.
+ * \retval 1 On failure.
  */
-int ${name}_open( ${name}_t *const me );
+extern int ${name}_open(const ${name} _t* const me);
 
 
 /**
- * \brief   Read.
+ * \brief Read.
  *
- * \param[in,out] me    The handle.
+ * \param[in] pSelf The handle.
  *
- * \retval   0 on success.
- * \retval   1 on failure.
+ * \retval 0 On success.
+ * \retval 1 On failure.
  */
-int ${name}_read( ${name}_t *const me );
+extern int ${name}_read(const ${name} _t* const me);
 
 
 /**
- * \brief   Write.
+ * \brief Write.
  *
- * \param[in,out] me    The handle.
+ * \param[in] pSelf The handle.
  *
- * \retval   0 on success.
- * \retval   1 on failure.
+ * \retval 0 On success.
+ * \retval 1 On failure.
  */
-int ${name}_write( ${name}_t *const me );
+extern int ${name}_write(const ${name} _t* const me);
 
 
 /**
- * \brief    Close.
+ * \brief Close.
  *
- * \param[in] me    The handle.
+ * \param[in] pSelf The handle.
  *
- * \retval   0 on success.
- * \retval   1 on failure.
+ * \retval 0 On success.
+ * \retval 1 On failure.
  */
-int ${name}_close( const ${name}_t *const me );
+extern int ${name}_close(const ${name} _t* const me);
+
+
+/* ######################################################################### */
+/* ######################################################################### */
+/* End of Include Guard and C++ Compatibility */
 
 
 #ifdef __cplusplus
 }
 #endif
+
 
 #endif /* ${NAME}_H_ONLY_ONE_INCLUDE_SAFETY */
